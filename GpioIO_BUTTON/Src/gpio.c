@@ -7,6 +7,8 @@
 #define LED_BR5			(1U<<21) /*Bit Reset Pin 5*/
 #define BTN_PIN			(1U<<13)
 
+#define LED_PIN			(1U<<5)
+
 void led_init(void)
 {
 	/*Enable clock access to GPIOA*/
@@ -54,5 +56,8 @@ bool get_btn_state(void){
 }
 
 
-
+void led_toggle(void){
+	/*Toggle PA5*/
+	GPIOA->ODR ^= LED_PIN;
+}
 

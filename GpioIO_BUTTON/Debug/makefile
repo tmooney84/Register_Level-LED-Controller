@@ -59,8 +59,8 @@ all: main-build
 main-build: GpioIO_BUTTON.elf secondary-outputs
 
 # Tool invocations
-GpioIO_BUTTON.elf GpioIO_BUTTON.map: $(OBJS) $(USER_OBJS) /home/hanna/STM32CubeIDE/workspace_1.13.0/GpioIO_BUTTON/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "GpioIO_BUTTON.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/hanna/STM32CubeIDE/workspace_1.13.0/GpioIO_BUTTON/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GpioIO_BUTTON.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+GpioIO_BUTTON.elf GpioIO_BUTTON.map: $(OBJS) $(USER_OBJS) /home/hanna/STM32CubeIDE/workspace_1.13.0/Register_Level-LED-Controller/GpioIO_BUTTON/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "GpioIO_BUTTON.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/hanna/STM32CubeIDE/workspace_1.13.0/Register_Level-LED-Controller/GpioIO_BUTTON/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GpioIO_BUTTON.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
