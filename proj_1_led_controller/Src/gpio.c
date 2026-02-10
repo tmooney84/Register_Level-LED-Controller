@@ -6,7 +6,6 @@
 #define LED_BS5			(1U<<5)  /*Bit Set Pin 5*/
 #define LED_BR5			(1U<<21) /*Bit Reset Pin 5*/
 #define BTN_PIN			(1U<<13)
-
 #define LED_PIN			(1U<<5)
 
 void led_init(void)
@@ -33,6 +32,12 @@ void led_off(void)
 
 }
 
+void led_toggle(void)
+{
+	/*Toggle PA5*/
+	GPIOA->ODR ^=LED_PIN;
+}
+
 void button_init(void){
 	/*Enable clock access to PORTC*/
 	RCC->AHB1ENR |= GPIOCEN;
@@ -56,8 +61,5 @@ bool get_btn_state(void){
 }
 
 
-void led_toggle(void){
-	/*Toggle PA5*/
-	GPIOA->ODR ^= LED_PIN;
-}
+
 
