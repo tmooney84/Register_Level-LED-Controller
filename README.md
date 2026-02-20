@@ -1,6 +1,6 @@
 # Register Level LED Controller
 
-This is a bare-metal C firmware program that controls an LED using direct register access and is written for the STM Nucleo-F411RE Development Board
+This is a bare-metal C firmware program that controls an LED with an on-board button using direct register access and is written for the STM Nucleo-F411RE Development Board and a virtualized version of that board in Renode.
 
 ## Table of Contents
 
