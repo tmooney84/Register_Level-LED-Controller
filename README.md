@@ -31,7 +31,7 @@ using SSH:
 
 ## Usage
 
-1. If running on a physical STM Nucleo-F411RE Board open the STM32CubeIDE and connect the board using the microUSB cable. If you need to install STM32CubeIDE visit https://www.st.com/en/development-tools/stm32cubeide.html.
+### 1. If running on a physical STM Nucleo-F411RE Board open the STM32CubeIDE and connect the board using the microUSB cable. If you need to install STM32CubeIDE visit https://www.st.com/en/development-tools/stm32cubeide.html.
 
   A. Once you have opened the IDE, make sure you are in the correct workspace and navigate to the Register_Level-LED-Controller project and the proj_1_led_controller sub-directory. The main project code can be found in the Src and Inc sub-directories.
 
@@ -42,7 +42,7 @@ using SSH:
 [![LED Demo](https://i9.ytimg.com/vi/q3SN33JRCC0/mqdefault.jpg?sqp=COj14swG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgUyhHMA8=&rs=AOn4CLAD4MlFH9pyUuoIjJ9XtMfHuImSug)](https://www.youtube.com/watch?v=q3SN33JRCC0)
 
 
-2. If emulating the the board using Renode, 
+### 2. If emulating the the board using Renode, 
   A. Open Renode and start the Renode Script (.resc) for the virtual board and firmware.
   
   ```renode
