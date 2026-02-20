@@ -1,0 +1,21 @@
+logFile $ORIGIN/led_controller.log True
+
+$name?="nucleo_f411re"
+$bin?=$ORIGIN/proj_1_led_controller.elf
+$repl?=$ORIGIN/proj_1.repl
+
+using sysbus
+mach create $name
+
+machine LoadPlatformDescription $repl
+
+
+showAnalyzer usart2
+
+macro reset
+"""
+    sysbus LoadELF $bin
+"""
+
+runMacro $reset
+start

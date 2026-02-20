@@ -59,8 +59,8 @@ all: main-build
 main-build: proj_1_led_controller.elf secondary-outputs
 
 # Tool invocations
-proj_1_led_controller.elf proj_1_led_controller.map: $(OBJS) $(USER_OBJS) /home/hanna/STM32CubeIDE/workspace_1.13.0/proj_1_led_controller/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "proj_1_led_controller.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/hanna/STM32CubeIDE/workspace_1.13.0/proj_1_led_controller/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="proj_1_led_controller.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+proj_1_led_controller.elf proj_1_led_controller.map: $(OBJS) $(USER_OBJS) /home/hanna/STM32CubeIDE/workspace_1.13.0/Register_Level-LED-Controller/proj_1_led_controller/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "proj_1_led_controller.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/hanna/STM32CubeIDE/workspace_1.13.0/Register_Level-LED-Controller/proj_1_led_controller/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="proj_1_led_controller.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
