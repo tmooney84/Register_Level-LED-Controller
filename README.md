@@ -31,13 +31,15 @@ using SSH:
 
 ## Usage
 
-### 1. If running on a physical STM Nucleo-F411RE Board open the STM32CubeIDE and connect the board using the microUSB cable. If you need to install STM32CubeIDE visit https://www.st.com/en/development-tools/stm32cubeide.html.
+### 1. If running on a physical STM Nucleo-F411RE Board 
 
-  A. Once you have opened the IDE, make sure you are in the correct workspace and navigate to the Register_Level-LED-Controller project and the proj_1_led_controller sub-directory. The main project code can be found in the Src and Inc sub-directories.
+    A. open the STM32CubeIDE and connect the board using the microUSB cable. If you need to install STM32CubeIDE visit     https://www.st.com/en/development-tools/stm32cubeide.html.
+    
+    B. Once you have opened the IDE, make sure you are in the correct workspace and navigate to the Register_Level-LED-Controller project and the proj_1_led_controller sub-directory. The main project code can be found in the Src and Inc sub-directories.
 
-  B. Next build the project and download the firmware to the STM board. Look to IDE Help guide for further details.
-
-  C. Once the firmware is loaded on the board, the on-board button at PC-13 should toggle the PA-5 LED on and off. 
+    C. Next build the project and download the firmware to the STM board. Look to IDE Help guide for further details.
+    
+    D. Once the firmware is loaded on the board, the on-board button at PC-13 should toggle the PA-5 LED on and off. 
 
 [![LED Demo](https://i9.ytimg.com/vi/q3SN33JRCC0/mqdefault.jpg?sqp=COj14swG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgUyhHMA8=&rs=AOn4CLAD4MlFH9pyUuoIjJ9XtMfHuImSug)](https://www.youtube.com/watch?v=q3SN33JRCC0)
 
