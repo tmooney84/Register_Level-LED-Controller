@@ -70,14 +70,13 @@ A. Navigate to the renode-emulation subdirectory
     cd renode-emulation
     ```
 B. Run run_tests.py script
-    
-    ```
-    python run_tests.py  (Windows)
-    ```
-    
-    ```
-    python3 run_tests.py (Linux)
-    ```
+  ```powershell
+  python run_tests.py  (Windows)
+  ```
+  
+  ```bash
+  python3 run_tests.py (Linux)
+  ```
 
 ## Future Improvements
   -Interrupt-based logic connecting the button and LED 
