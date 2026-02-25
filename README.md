@@ -70,15 +70,13 @@ A. Navigate to the renode-emulation subdirectory
     cd renode-emulation
     ```
 B. Run run_tests.py script
-   
-    On Windows:
-    ```powershell
-    python run_tests.py
+    
+    ```
+    python run_tests.py  (Windows)
     ```
     
-    On Linux:
-    ```bash
-    python3 run_tests.py
+    ```
+    python3 run_tests.py (Linux)
     ```
 
 ## Future Improvements
