@@ -18,4 +18,5 @@ macro reset
 """
 
 runMacro $reset
-start
+## commenting out the "start command"
+# start
