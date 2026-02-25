@@ -64,7 +64,7 @@ D. Once the firmware is loaded on the board, the on-board PC-13 button should to
   ```renode
   (nucleo_f411re) gpioa.greenled2 State
   ```
-### 3. Running the Automated Testing using Robot Framework
+### 3. If running the Automated Testing using Robot Framework
 A. Navigate to the renode-emulation subdirectory
     ```bash
     cd renode-emulation
