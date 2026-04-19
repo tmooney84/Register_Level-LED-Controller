@@ -41,6 +41,7 @@ C. Next build the project and download the firmware to the STM board. Look to ID
     
 D. Once the firmware is loaded on the board, the on-board PC-13 button should toggle the PA-5 LED on and off. 
 
+###LED Controller Demonstration
 [![LED Demo](https://img.youtube.com/vi/q3SN33JRCC0/maxresdefault.jpg)](https://www.youtube.com/watch?v=q3SN33JRCC0)
 
 
